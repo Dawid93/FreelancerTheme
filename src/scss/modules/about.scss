@@ -1,0 +1,18 @@
+.about {
+    margin: auto;
+    padding: 4rem 1rem;
+    background-color: white;
+
+    &__title {
+        font-size: 2rem;
+    }
+
+    &__description {
+        font-size: 1.25rem;
+        width: 50%;
+    }
+    
+    &__link {
+        font-size: 1.25rem;
+    }
+}
