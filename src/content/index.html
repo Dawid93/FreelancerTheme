@@ -1,40 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Site title</title>
-    <meta name="description" content="Description" />
 
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Site title</title>
+  <meta name="description" content="Description" />
 
-    <link rel="manifest" href="manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <!-- Title -->
+  <meta property="og:title" content="" />
+  <!-- OPTIONAL description. 2-4 sentences. -->
+  <meta property="og:description" content="" />
+  <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+  <meta property="og:url" content="" />
+  <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+  <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
 
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <h1>Hello world - with simple PWA support!</h1>
+<body>
+  <main>
+    <nav class="navigation">
 
-    <script src="js/main.js"></script>
-  </body>
+    </nav>
+
+    <header class="cover">
+      <div class="cover__overlay">
+        <div class="header">
+          <h1 class="header__title">COMPANY</h1>
+          <h2 class="header__subtitle">John Doe</h2>
+        </div>
+        <a class="cover__link" href="#experience">
+          <img class="cover__button" src="../assets/img/arrow-down.png" />
+        </a>
+      </div>
+    </header>
+
+    <section class="about">
+      <article class="container">
+        <h1 class="about__title">Hi!👋🏻 My name is John Doe.</h1>
+        <p class="about__description">I'm freelancer with several years of experience. I usually work on mobile games and multimedia applications. I'm also a big fan of electronic entertainment and enthusistic of new technologies. Below you find more info about me, like my <a
+          class="about__link" href="#">experience</a>, <a class="about__link" href="#">skills</a> or my <a
+          class="about__link" href="#">projects</a>.</p>
+      </article>
+    </section>
+
+    <section id="experience" class="experience">
+
+    </section>
+
+    <section class="skills">
+
+    </section>
+
+    <section class="projects">
+
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <section class="contanct">
+          <h1>Kontakt</h1>
+        </section>
+      </div>
+    </footer>
+  </main>
+</body>
+
 </html>
