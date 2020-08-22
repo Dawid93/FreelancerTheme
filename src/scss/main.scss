@@ -1,15 +1,16 @@
 @import "_normalize";
 @import "_variables";
 // modules
-@import "modules/header.scss";
+@import "modules/cover.scss";
 @import "modules/about.scss";
+@import "modules/experience.scss";
 // fonts
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
 
 html {
   box-sizing: border-box;
   font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
 }
 
