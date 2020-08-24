@@ -5,7 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&family=Roboto+Mono:wght@400;700&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -498,6 +498,117 @@ template {
     font-size: 1.5rem;
     font-weight: 500;
     color: #3b3b3b; }
+
+.projects {
+  padding: 4rem 1rem; }
+  .projects__description {
+    font-size: 1.25rem; }
+  .projects__grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(200px, auto);
+    -webkit-column-gap: 8px;
+       -moz-column-gap: 8px;
+            column-gap: 8px; }
+    @media screen and (max-width: 767px) {
+      .projects__grid {
+        -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr); } }
+  .projects__title {
+    color: #000;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0 0 4rem 0; }
+
+.project {
+  background: #212528;
+  color: #a3a3a3;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 1rem 0;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Roboto Mono;
+  -webkit-box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25); }
+  @media screen and (max-width: 767px) {
+    .project {
+      line-height: 1.25rem;
+      font-size: 0.75rem; } }
+  .project--light {
+    background: #ffffff;
+    color: #8d8d8d; }
+  .project__circle {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    margin-right: 5px; }
+    .project__circle--red {
+      background: #ff0000; }
+    .project__circle--green {
+      background: #00da00; }
+    .project__circle--yellow {
+      background: #ffd015; }
+  .project__content {
+    padding: 1.25rem 3rem 3.5rem; }
+    @media screen and (max-width: 767px) {
+      .project__content {
+        padding: 1.25rem 1rem 1.5rem; } }
+  .project__grid {
+    display: -ms-grid;
+    display: grid;
+    -webkit-column-gap: 0.5rem;
+       -moz-column-gap: 0.5rem;
+            column-gap: 0.5rem;
+    margin: 0;
+    -ms-grid-columns: 116px 1fr;
+    grid-template-columns: 116px 1fr; }
+    @media screen and (max-width: 767px) {
+      .project__grid {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr; } }
+    .project__grid--description {
+      margin-bottom: 1.5rem; }
+  .project__header {
+    background: #1e1e1e;
+    color: #cacaca;
+    height: 40px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .project__header--light {
+      background: #b6b6b6;
+      color: #4e4e4e; }
+  .project__label {
+    color: #808082;
+    text-align: right;
+    display: block;
+    font-weight: normal; }
+    @media screen and (max-width: 767px) {
+      .project__label {
+        text-align: left; } }
+    .project__label--light {
+      color: #808082; }
+  .project__link {
+    color: #14b5d0; }
+  .project__name {
+    color: #fff; }
+    .project__name--light {
+      color: #000; }
+  .project__titlebar {
+    width: 100%;
+    font-weight: bold;
+    text-align: center; }
 
 html {
   -webkit-box-sizing: border-box;
