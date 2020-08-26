@@ -27,14 +27,14 @@
 .project {
     background: $terminalBackgroundDark;
     color: $terminalTextDark;
-    border-radius: 8px;
+    border-radius: 4px;
     overflow: hidden;
     margin: 1rem 0;
     line-height: 1.5rem;
     font-size: 1rem;
     font-weight: 400;
     font-family: Roboto Mono;
-    box-shadow: 0 4px 16px rgba(0,0,0,.25);
+    box-shadow: 0 4px 16px $shadowDark;
 
     @media screen and (max-width: $tablet) {
         line-height: 1.25rem;
