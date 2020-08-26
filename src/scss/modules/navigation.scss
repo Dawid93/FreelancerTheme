@@ -1,0 +1,15 @@
+.navigation {
+    height: 3rem;
+    width: 100%;
+    background: $shadowDark;
+    color: $white;
+    position: fixed;
+    z-index: 1;
+
+    &__logo {
+        font-size: 1.5rem;
+        padding: 0 100px;
+        line-height: 3rem;
+        font-weight: bold;
+    }
+}
