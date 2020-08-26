@@ -1,22 +1,26 @@
 "use strict";
 
-// service worker registration - remove if you're not going to use it
-
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }, function(err) {
-      // registration failed :(
-      console.log('ServiceWorker registration failed: ', err);
-    });
-  });
-}
-
 // place your code below
 
-
 console.log(`Hello world!`);
+
+var toggle = document.querySelector('.navigation__item--toggle-js');
+
+toggle.addEventListener('click', (e) => {
+  var links = document.querySelectorAll('.navigation__item--link');
+  console.log(links);
+
+  for(let link of links){
+    console.log(link);
+
+    if(link.classList.contains('navigation__item--link-active')) {
+      link.classList.remove('navigation__item--link-active');
+    }
+    else{
+      link.classList.add('navigation__item--link-active');
+    }
+    
+  }
+});
 
 

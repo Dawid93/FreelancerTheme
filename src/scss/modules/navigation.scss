@@ -16,7 +16,7 @@
 
             @media screen and (max-width: $mobile),
             screen and (max-width: $tablet) {
-                float: none;
+                flex: none;
             }
         }
 
@@ -31,10 +31,11 @@
                 width: 100%;
                 order: 2;
                 text-align: center;
+                padding: 1rem .5rem;
                 display: none;
             }
 
-            &--active {
+            &-active {
                 display: block;
             }
         }
