@@ -14,7 +14,14 @@
 <body>
   <main>
     <nav class="navigation">
-
+      <ul class="navigation__items">
+        <li class="navigation__item navigation__item--logo"><a class="navigation__text navigation__text--logo" href="#">Freelancer</a></li>
+        <li class="navigation__item navigation__item--link"><a class="navigation__text navigation__text--link" href="#about">About me</a></li>
+        <li class="navigation__item navigation__item--link"><a class="navigation__text navigation__text--link" href="#experience">Experience</a></li>
+        <li class="navigation__item navigation__item--link"><a class="navigation__text navigation__text--link" href="#projects">Projects</a></li>
+        <li class="navigation__item navigation__item--link"><a class="navigation__text navigation__text--link" href="#contact">Contact</a></li>
+        <li class="navigation__item navigation__item--toggle-js"><span class="navigation__toggle navigation__toggle--bars"></span></li>
+      </ul>
     </nav>
 
     <header class="cover">
@@ -80,7 +87,7 @@
       </div>
     </section>
 
-    <section class="projects">
+    <section id="projects" class="projects">
       <div class="container projects__container">
         <h2 class="projects__title">Recent projects</h2>
         <p class="projects__description">Few of my recent projects if you want see more check out my <a class="link"
@@ -150,7 +157,7 @@
       </div>
     </section>
 
-    <footer class="contact">
+    <footer id="contact" class="contact">
       <div class="container">
         <section class="contanct contact__container">
           <h2 class="contact__title">Contact</h2>
@@ -168,6 +175,8 @@
       </div>
     </footer>
   </main>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>
