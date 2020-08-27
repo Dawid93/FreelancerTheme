@@ -36,11 +36,6 @@
     font-family: Roboto Mono;
     box-shadow: 0 4px 16px $shadowDark;
 
-    @media screen and (max-width: $tablet) {
-        line-height: 1.25rem;
-    font-size: 0.75rem;
-    }
-
     &--light {
         background: $terminalBackgroundLight;
         color: $terminalTextLight;
