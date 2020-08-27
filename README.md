@@ -2,6 +2,11 @@
 
 ![CoverSection](SS/example.png)
 
+## Demo:
+
+[Demo on GitHub Pages](https://dawid93.github.io/FreelancerTheme/)
+
+## Description:
 Website template designed to show experience and portfolio. 
 
 The website was created in HTML, SCSS and JS. 
