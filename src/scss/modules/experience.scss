@@ -46,8 +46,8 @@
     &__date {
         margin: 0;
         margin-bottom: .5rem;
-        font-size: 1rem;
-        font-weight: 500;
+        font-size: 1.25rem;
+        font-weight: 400;
         color: $timelineDate;
     }
 
@@ -56,13 +56,9 @@
         margin: 0;
         margin-bottom: .5rem;
         font-size: 1rem;
-        font-weight: 300;
+        font-weight: 400;
         text-align: justify;
         color: $timelineDescription;
-
-        @media screen and (max-width: $mobile) {
-            font-weight: 400;
-        }
     }
 
     &__image {
@@ -112,5 +108,9 @@
         font-size: 1.5rem;
         font-weight: 500;
         color: $timelineTitle;
+
+        @media screen and (max-width: $mobile) {
+            margin-top: 1rem;
+        }
     }
 }

@@ -1,8 +1,8 @@
 "use strict";
 
 // place your code below
-
-console.log(`Hello world!`);
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 var toggle = document.querySelector('.navigation__item--toggle-js');
 
