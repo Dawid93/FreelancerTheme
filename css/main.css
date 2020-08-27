@@ -310,6 +310,8 @@ template {
 
 .cover {
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  max-height: 100%;
   width: 100vw;
   max-width: 100%;
   background-image: url(../assets/img/cover.jpg);
@@ -317,7 +319,9 @@ template {
   background-position: center; }
   .cover__overlay {
     width: 100%;
+    max-width: 100%;
     height: 100%;
+    max-height: 100%;
     background: rgba(0, 0, 0, 0.5);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -367,18 +371,25 @@ template {
 
 .header {
   max-width: 100%;
-  margin: auto; }
+  margin: auto;
+  overflow: hidden; }
   .header__title {
     color: #fff;
     margin: 0;
     padding: .5rem;
     font-size: 4rem;
     border: 4px #fff solid; }
+    @media screen and (max-width: 480px) {
+      .header__title {
+        font-size: 3rem; } }
   .header__subtitle {
     margin: 0.5rem 0;
     color: #fff;
     font-size: 2.5rem;
     text-align: center; }
+    @media screen and (max-width: 480px) {
+      .header__subtitle {
+        font-size: 2.25rem; } }
 
 .about {
   margin: auto;
@@ -392,7 +403,7 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row; }
-    @media screen and (max-width: 768px), (max-width: 320px) {
+    @media screen and (max-width: 768px), (max-width: 480px) {
       .about__container {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -401,7 +412,7 @@ template {
   .about__content {
     margin-left: 5rem;
     width: 50%; }
-    @media screen and (max-width: 768px), (max-width: 320px) {
+    @media screen and (max-width: 768px), (max-width: 480px) {
       .about__content {
         width: 100%;
         margin: .5rem .5rem .5rem .5rem; } }
@@ -432,7 +443,7 @@ template {
   padding: 4rem 1rem;
   background: #41A0F2;
   color: #fff; }
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 480px) {
     .experience {
       padding: 4rem 0; } }
   .experience__container {
@@ -458,26 +469,23 @@ template {
     margin-left: -2px;
     -webkit-box-shadow: 0 0 8px #333;
             box-shadow: 0 0 8px #333; }
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 480px) {
     .timeline::before {
       content: none; } }
   .timeline__date {
     margin: 0;
     margin-bottom: .5rem;
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 1.25rem;
+    font-weight: 400;
     color: #585858; }
   .timeline__description {
     line-height: 1.5rem;
     margin: 0;
     margin-bottom: .5rem;
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 400;
     text-align: justify;
     color: #2e2e2e; }
-    @media screen and (max-width: 320px) {
-      .timeline__description {
-        font-weight: 400; } }
   .timeline__image {
     position: absolute;
     background: #fff;
@@ -490,7 +498,7 @@ template {
     border: 4px solid #e4e4e4;
     -webkit-box-shadow: 0 0 8px #333;
             box-shadow: 0 0 8px #333; }
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 480px) {
       .timeline__image {
         left: calc(50% - 70px / 2);
         top: -35px; } }
@@ -509,7 +517,7 @@ template {
     margin-bottom: 2rem;
     margin-left: 100px;
     position: relative; }
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 480px) {
       .timeline__item {
         margin-left: 0;
         margin-bottom: 4rem;
@@ -520,6 +528,9 @@ template {
     font-size: 1.5rem;
     font-weight: 500;
     color: #3b3b3b; }
+    @media screen and (max-width: 480px) {
+      .timeline__title {
+        margin-top: 1rem; } }
 
 .projects {
   padding: 4rem 1rem; }
@@ -556,10 +567,6 @@ template {
   font-family: Roboto Mono;
   -webkit-box-shadow: 0 4px 16px #333;
           box-shadow: 0 4px 16px #333; }
-  @media screen and (max-width: 768px) {
-    .project {
-      line-height: 1.25rem;
-      font-size: 0.75rem; } }
   .project--light {
     background: #ffffff;
     color: #8d8d8d; }
@@ -691,7 +698,7 @@ template {
 
 .navigation {
   background: #1e1e1e;
-  padding: .5rem 1rem;
+  padding: 1rem 1.5rem;
   z-index: 1;
   position: fixed;
   width: 100%;
@@ -706,7 +713,7 @@ template {
       -webkit-box-flex: 1;
           -ms-flex: 1;
               flex: 1; }
-      @media screen and (max-width: 320px), screen and (max-width: 768px) {
+      @media screen and (max-width: 480px), screen and (max-width: 768px) {
         .navigation__item--logo {
           -webkit-box-flex: 0;
               -ms-flex: none;
@@ -718,7 +725,7 @@ template {
           -ms-flex-order: 1;
               order: 1;
       padding-right: .5rem; }
-      @media screen and (max-width: 320px), screen and (max-width: 768px) {
+      @media screen and (max-width: 480px), screen and (max-width: 768px) {
         .navigation__item--link {
           width: 100%;
           -webkit-box-ordinal-group: 3;
@@ -735,6 +742,7 @@ template {
     display: -ms-flexbox;
     display: flex;
     margin: 0;
+    padding: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -743,7 +751,7 @@ template {
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-    @media screen and (max-width: 320px), screen and (max-width: 768px) {
+    @media screen and (max-width: 480px), screen and (max-width: 768px) {
       .navigation__items {
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
@@ -765,7 +773,7 @@ template {
   .navigation__toggle {
     cursor: pointer;
     display: none; }
-    @media screen and (max-width: 320px), screen and (max-width: 768px) {
+    @media screen and (max-width: 480px), screen and (max-width: 768px) {
       .navigation__toggle {
         -webkit-box-ordinal-group: 2;
             -ms-flex-order: 1;
@@ -794,6 +802,12 @@ html {
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth; }
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 14px; } }
+  @media screen and (max-width: 480px) {
+    html {
+      font-size: 12px; } }
 
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
